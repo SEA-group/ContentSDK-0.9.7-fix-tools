@@ -1,4 +1,4 @@
-%% MP nodes check ver.2020.08.20a by AstreTunes from SEA group
+%% Available MP nodes check ver.2020.08.20a by AstreTunes from SEA group
 % This script checks available MP nodes in the current game client, and
 % save them in a list
 
@@ -15,13 +15,17 @@ clear
 fclose all;
 tic
 
+%% Parameter
+
+gameVersion = '0.9.7.0';
+
 %% Prepare file
 
-contentFileName = 'content.txt';
+contentFileName = ['content_', gameVersion, '.txt'];
 
-if isempty(dir('./content.txt'))
+if isempty(dir(['./', contentFileName]))
     toc;
-    error('content.txt doesn''t exist');
+    error([contentFileName, ' doesn''t exist']);
 end
 
 contentFile = fopen(contentFileName, 'rt');
@@ -55,7 +59,7 @@ while exitCycle == 0
     
 end
 
-save('content.mat', 'nodesMat');
+save(['content_', gameVersion, '.mat'], 'nodesMat');
 
 %%
 
