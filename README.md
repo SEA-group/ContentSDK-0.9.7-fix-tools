@@ -16,7 +16,7 @@ By AstreTunes @ SEA group
 1. **Matlab version must be r2016b or later**
 2. **The backup will be overwritten if you run the script twice**
 
-**[Download](https://github.com/SEA-group/Obsolete-MP-nodes-remover/archive/Script_for_0.9.7.0.zip)**
+**[Download](https://github.com/SEA-group/Obsolete-MP-nodes-remover/releases/download/0.9.7.0/Script_for_0.9.7.0.zip)**
 
 ## To generate content.mat after new game patch
 1. Download [wowsunpack.exe](https://forum.worldofwarships.eu/topic/113847-all-wows-unpack-tool-unpack-game-client-resources/) and put it in WoWS installation folder;
