@@ -1,11 +1,10 @@
 %% Available MP nodes check ver.2020.08.20a by AstreTunes from SEA group
-% This script checks available MP nodes in the current game client, and
-% save them in a list
+% This script checks MP nodes in all .visual files and removes the invalid ones
 
 % !!!!!! Matlab version r2016b or later is required (mandatory) !!!!!!
 
 % How to use:
-% - put this script and content.mat in res_mods/PnFMods/
+% - put this script and content_0.9.8.0.mat in res_mods/PnFMods/
 % - run this script
 
 clc
