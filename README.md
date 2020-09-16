@@ -7,7 +7,7 @@
 
 A fix tool for several contentSDK issues appeared since 0.9.7.0 patch
 
-Note that this is a temporary solution proposed by MatroseFuchs from WG. [Main post](https://forum.worldofwarships.eu/topic/140165-primitive-group-issue)
+Note that this is a temporary solution proposed by MatroseFuchs from WG. [Main thread](https://forum.worldofwarships.eu/topic/140165-primitive-group-issue)
 
 Scripts by AstreTunes @ SEA group
 
