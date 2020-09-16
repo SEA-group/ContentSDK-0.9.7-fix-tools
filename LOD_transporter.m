@@ -64,6 +64,20 @@ for indVisual = 1 : size(visualList, 1)
    
 end
 
+%% Move anca
+
+for indAnca = 1 : size(ancaList, 1)
+    
+    currentFileName = [ancaList(indAnca).folder, '\', ancaList(indAnca).name];
+    if strcmp(currentFileName(end-9 : end-6), '_lod')
+        
+        disp(['moving ', currentFileName, ' ...']);
+        movefile(currentFileName, [ancaList(indAnca).folder, '\lods'])
+                
+    end
+   
+end
+
 %% Move and modify model
 
 for indModel = 1 : size(modelList, 1)
