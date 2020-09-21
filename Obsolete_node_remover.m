@@ -1,4 +1,4 @@
-%% Available MP nodes check ver.2020.08.20a by AstreTunes from SEA group
+%% Available MP nodes check ver.2020.09.21a by AstreTunes from SEA group
 % This script checks MP nodes in all .visual files and removes the invalid ones
 
 % !!!!!! Matlab version r2016b or later is required (mandatory) !!!!!!
@@ -76,6 +76,10 @@ for indVisual = 1 : size(visualList, 1)
                 elseif strcmp(lineBuffer(strfind(lineBuffer, 'MP_')+4), 'T')    % technical node, xTxnnnn
                     
                     nodeIdentifier = lineBuffer((strfind(lineBuffer, 'MP_') + 3) : (strfind(lineBuffer, 'MP_') + 9));
+                    
+                else
+                    
+                    nodeIdentifier = 'other';
                     
                 end
                 
