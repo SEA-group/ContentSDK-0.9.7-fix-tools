@@ -17,7 +17,7 @@ tic
 
 %% Parameter
 
-gameVersion = '0.9.8.0';
+gameVersion = '0.9.9.0';
 
 %% Prepare file
 
