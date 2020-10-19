@@ -51,7 +51,7 @@ while exitCycle == 0
             
             lineSlashes = strfind(lineBuffer, '/');
             lineCount = lineCount + 1;
-            nodesMat{lineCount} = lineBuffer((lineSlashes(end) + 1) : (end - 11));
+            nodesMat{lineCount} = lineBuffer((lineSlashes(end-1) + 1) : (lineSlashes(end)-1));
             
         end
         
