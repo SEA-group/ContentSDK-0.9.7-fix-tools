@@ -14,7 +14,7 @@ tic
 
 %% Parameter
 
-gameVersion = '0.9.12.0';
+gameVersion = '0.10.0.0';
 
 %% Load available nodes list
 

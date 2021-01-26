@@ -5,7 +5,7 @@
 % How to use:
 % - use wowsunpack.exe to generate a content list: (can take few minutes)
 % - - command: 
-%           wowsunpack.exe -l -x bin\3245976\idx -p ..\..\..\res_packages -I content/gameplay/*/misc/* -I content/gameplay/*/technical/* -X *textures* -X *lod* > content.txt
+%           wowsunpack.exe -l -x bin\3343484\idx -p ..\..\..\res_packages -I content/gameplay/*/misc/* -I content/gameplay/*/technical/* -X *textures* -X *lod* > content_0.10.0.0.txt
 % - - support page:https://forum.worldofwarships.ru/topic/123043-all-wows-unpack-tool-%D1%80%D0%B0%D1%81%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B0-%D1%80%D0%B5%D1%81%D1%83%D1%80%D1%81%D0%BE%D0%B2-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%B0-%D0%B8%D0%B3%D1%80%D1%8B/
 % - copy lcontent.txt to this folder
 % - run this script
@@ -17,7 +17,7 @@ tic
 
 %% Parameter
 
-gameVersion = '0.9.12.0';
+gameVersion = '0.10.0.0';
 
 %% Prepare file
 
