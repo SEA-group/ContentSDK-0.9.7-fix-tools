@@ -21,9 +21,9 @@ Scripts by AstreTunes @ SEA group
 1. **Matlab version must be r2016b or later**
 2. **The backup will be overwritten if you run the script twice**
 
-**[Download](https://github.com/SEA-group/ContentSDK-0.9.7-fix-tools/releases/download/0.10.0.0/ContentSDK_fix_0.10.0.0.zip)**
+**[Download](https://github.com/SEA-group/ContentSDK-0.9.7-fix-tools/releases/download/0.10.2.0/ContentSDK_fix_0.10.2.0.zip)**
 
 ## To generate content.mat after new game patch
 1. Download [wowsunpack.exe](https://forum.worldofwarships.eu/topic/113847-all-wows-unpack-tool-unpack-game-client-resources/) and put it in WoWS installation folder;
 2. Open cmd in the same folder, type `wowsunpack.exe -l -x bin\[build_number]\idx -p ..\..\..\res_packages -I content/gameplay/*/misc/* -I content/gameplay/*/technical/* -X *textures* -X *lod* > content.txt`; note that the build number changes according to game client version;
-3. Put `content.txt` beside `Available_MP_nodes_check.m`, **check the version number in line 18**, and run the latter. The path of this script does not matter.
+3. Put `content.txt` beside `Available_MP_nodes_check.m`, **check the version number in line 20**, and run the latter. The path of this script does not matter.

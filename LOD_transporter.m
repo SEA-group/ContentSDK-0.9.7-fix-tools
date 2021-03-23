@@ -30,54 +30,6 @@ if isempty(primitivesList)
     
 end
 
-%% Move primitives
-
-for indPrimitives = 1 : size(primitivesList, 1)
-    
-    % check if there is "_lod" in its filename
-    currentFileName = [primitivesList(indPrimitives).folder, '\', primitivesList(indPrimitives).name];
-    if strcmp(currentFileName(end-15 : end-12), '_lod')
-        
-        % create folder if doesn't exist
-        if ~exist([primitivesList(indPrimitives).folder, '\lods'], 'dir') 
-            mkdir([primitivesList(indPrimitives).folder, '\lods']) 
-        end
-        
-        disp(['moving ', currentFileName, ' ...']);
-        movefile(currentFileName, [primitivesList(indPrimitives).folder, '\lods'])
-                
-    end
-   
-end
-
-%% Move visual
-
-for indVisual = 1 : size(visualList, 1)
-    
-    currentFileName = [visualList(indVisual).folder, '\', visualList(indVisual).name];
-    if strcmp(currentFileName(end-11 : end-8), '_lod')
-        
-        disp(['moving ', currentFileName, ' ...']);
-        movefile(currentFileName, [visualList(indVisual).folder, '\lods'])
-                
-    end
-   
-end
-
-%% Move anca
-
-for indAnca = 1 : size(ancaList, 1)
-    
-    currentFileName = [ancaList(indAnca).folder, '\', ancaList(indAnca).name];
-    if strcmp(currentFileName(end-9 : end-6), '_lod')
-        
-        disp(['moving ', currentFileName, ' ...']);
-        movefile(currentFileName, [ancaList(indAnca).folder, '\lods'])
-                
-    end
-   
-end
-
 %% Move and modify model
 
 for indModel = 1 : size(modelList, 1)
@@ -91,6 +43,11 @@ for indModel = 1 : size(modelList, 1)
     % modify file
     currentFileBackup = fopen([currentFileName, 'bak'], 'rt');
     currentFile = fopen(currentFileName, 'w');
+    
+    % create folder if doesn't exist
+    if ~exist([modelList(indModel).folder, '\lods'], 'dir') 
+        mkdir([modelList(indModel).folder, '\lods']) 
+    end
     
     lineBuffer = 0;
     exitCycle = 0;
@@ -161,6 +118,54 @@ for indModel = 1 : size(modelList, 1)
                 
     end
     
+end
+
+%% Move primitives
+
+for indPrimitives = 1 : size(primitivesList, 1)
+    
+    % check if there is "_lod" in its filename
+    currentFileName = [primitivesList(indPrimitives).folder, '\', primitivesList(indPrimitives).name];
+    if strcmp(currentFileName(end-15 : end-12), '_lod')
+        
+%         % create folder if doesn't exist
+%         if ~exist([primitivesList(indPrimitives).folder, '\lods'], 'dir') 
+%             mkdir([primitivesList(indPrimitives).folder, '\lods']) 
+%         end
+        
+        disp(['moving ', currentFileName, ' ...']);
+        movefile(currentFileName, [primitivesList(indPrimitives).folder, '\lods'])
+                
+    end
+   
+end
+
+%% Move visual
+
+for indVisual = 1 : size(visualList, 1)
+    
+    currentFileName = [visualList(indVisual).folder, '\', visualList(indVisual).name];
+    if strcmp(currentFileName(end-11 : end-8), '_lod')
+        
+        disp(['moving ', currentFileName, ' ...']);
+        movefile(currentFileName, [visualList(indVisual).folder, '\lods'])
+                
+    end
+   
+end
+
+%% Move anca
+
+for indAnca = 1 : size(ancaList, 1)
+    
+    currentFileName = [ancaList(indAnca).folder, '\', ancaList(indAnca).name];
+    if strcmp(currentFileName(end-9 : end-6), '_lod')
+        
+        disp(['moving ', currentFileName, ' ...']);
+        movefile(currentFileName, [ancaList(indAnca).folder, '\lods'])
+                
+    end
+   
 end
 
 %% Finish
