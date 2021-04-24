@@ -23,7 +23,7 @@ modelList = dir('**/*.model');
 primitivesList = dir('**/*.primitives');
 visualList = dir('**/*.visual');
 
-if isempty(primitivesList)
+if isempty(modelList)
     
     toc;
     error('No lod file found.');
@@ -122,23 +122,23 @@ end
 
 %% Move primitives
 
-for indPrimitives = 1 : size(primitivesList, 1)
+if ~isempty(primitivesList)
     
-    % check if there is "_lod" in its filename
-    currentFileName = [primitivesList(indPrimitives).folder, '\', primitivesList(indPrimitives).name];
-    if strcmp(currentFileName(end-15 : end-12), '_lod')
-        
-%         % create folder if doesn't exist
-%         if ~exist([primitivesList(indPrimitives).folder, '\lods'], 'dir') 
-%             mkdir([primitivesList(indPrimitives).folder, '\lods']) 
-%         end
-        
-        disp(['moving ', currentFileName, ' ...']);
-        movefile(currentFileName, [primitivesList(indPrimitives).folder, '\lods'])
-                
+    for indPrimitives = 1 : size(primitivesList, 1)
+
+        % check if there is "_lod" in its filename
+        currentFileName = [primitivesList(indPrimitives).folder, '\', primitivesList(indPrimitives).name];
+        if strcmp(currentFileName(end-15 : end-12), '_lod')
+
+            disp(['moving ', currentFileName, ' ...']);
+            movefile(currentFileName, [primitivesList(indPrimitives).folder, '\lods'])
+
+        end
+
     end
-   
+    
 end
+
 
 %% Move visual
 
