@@ -18,12 +18,6 @@ def listFiles(dirPath):
             fileList.append(os.path.join(root,fileObj))
     return fileList
 
-def GetFileNameAndExt(filename):
-    import os
-    (filepath,tempfilename) = os.path.split(filename);
-    (shotname,extension) = os.path.splitext(tempfilename);
-    return shotname
-
 # sys.setdefaultencoding("utf-8");
 def main(fileDir):
     fileList = listFiles(fileDir)
