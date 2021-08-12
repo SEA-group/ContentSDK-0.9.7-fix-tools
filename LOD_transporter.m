@@ -38,7 +38,7 @@ for indModel = 1 : size(modelList, 1)
     
     % backup file
     copyfile(currentFileName, [currentFileName, 'bak']);
-    disp([currentFileName, ' is backed up'])
+    disp([currentFileName, ' is backed up']);
     
     % modify file
     currentFileBackup = fopen([currentFileName, 'bak'], 'rt');
@@ -46,7 +46,7 @@ for indModel = 1 : size(modelList, 1)
     
     % create folder if doesn't exist
     if ~exist([modelList(indModel).folder, '\lods'], 'dir') 
-        mkdir([modelList(indModel).folder, '\lods']) 
+        mkdir([modelList(indModel).folder, '\lods']);
     end
     
     lineBuffer = 0;
@@ -114,7 +114,7 @@ for indModel = 1 : size(modelList, 1)
         
         fclose all;
         disp(['moving ', currentFileName, ' ...']);
-        movefile(currentFileName, [modelList(indModel).folder, '\lods'])
+        movefile(currentFileName, [modelList(indModel).folder, '\lods']);
                 
     end
     
@@ -131,7 +131,7 @@ if ~isempty(primitivesList)
         if strcmp(currentFileName(end-15 : end-12), '_lod')
 
             disp(['moving ', currentFileName, ' ...']);
-            movefile(currentFileName, [primitivesList(indPrimitives).folder, '\lods'])
+            movefile(currentFileName, [primitivesList(indPrimitives).folder, '\lods']);
 
         end
 
@@ -148,7 +148,7 @@ for indVisual = 1 : size(visualList, 1)
     if strcmp(currentFileName(end-11 : end-8), '_lod')
         
         disp(['moving ', currentFileName, ' ...']);
-        movefile(currentFileName, [visualList(indVisual).folder, '\lods'])
+        movefile(currentFileName, [visualList(indVisual).folder, '\lods']);
                 
     end
    
@@ -162,7 +162,7 @@ for indAnca = 1 : size(ancaList, 1)
     if strcmp(currentFileName(end-9 : end-6), '_lod')
         
         disp(['moving ', currentFileName, ' ...']);
-        movefile(currentFileName, [ancaList(indAnca).folder, '\lods'])
+        movefile(currentFileName, [ancaList(indAnca).folder, '\lods']);
                 
     end
    
