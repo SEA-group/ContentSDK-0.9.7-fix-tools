@@ -4,7 +4,7 @@
 % !!!!!! Matlab version r2016b or later is required (mandatory) !!!!!!
 
 % How to use:
-% - put this script and content_0.10.5.0.mat in res_mods/PnFMods/
+% - put this script and content_0.10.7.0.mat in res_mods/PnFMods/
 % - run this script
 
 clc
