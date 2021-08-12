@@ -1,7 +1,7 @@
 %% LOD issue's temporary fix proposed by MatroseFuchs, script witten by AstreTunes from SEA group
 % This script moves all lod files into lods/ folder
 
-% !!!!!! Matlab version r2016b or later is required (mandatory) !!!!!!
+% !!!!!! Matlab version must be r2016b or higher (mandatory) !!!!!!
 
 % How to use:
 % - put this script in res_mods/PnFMods/
@@ -50,9 +50,9 @@ for indModel = 1 : size(modelList, 1)
     end
     
     lineBuffer = 0;
-    exitCycle = 0;
+    exitLoop = 0;
     
-    while exitCycle == 0
+    while exitLoop == 0
         
         lineBuffer = fgetl(currentFileBackup);
         
@@ -60,7 +60,7 @@ for indModel = 1 : size(modelList, 1)
             
             if lineBuffer==-1
                 
-                exitCycle=1;
+                exitLoop=1;
                 
             elseif contains(lineBuffer, '<parent>')
             
