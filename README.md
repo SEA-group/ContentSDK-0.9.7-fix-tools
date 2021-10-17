@@ -1,4 +1,4 @@
-# ContentSDK fix toolkit
+# ContentSDK toolkit
 
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/SEA-group/ContentSDK-0.9.7-fix-tools?include_prereleases)
 ![GitHub last commit](https://img.shields.io/github/last-commit/SEA-group/ContentSDK-0.9.7-fix-tools)
