@@ -4,17 +4,17 @@
 % !!!!!! Matlab version r2016b or later is required (mandatory) !!!!!!
 
 % How to use:
-% - put this script and content_0.10.10.0.mat in res_mods/PnFMods/
+% - put this script and content_0.10.11.0.mat in res_mods/PnFMods/
 % - run this script
 
-clc
+% clc
 clear
 fclose all;
 tic
 
 %% Parameter
 
-gameVersion = '0.10.10.0';
+gameVersion = '0.10.11.0';
 
 %% Load available nodes list
 
@@ -169,7 +169,7 @@ end
 
 %%
 
-disp('log written to Obsolete_node_remover.log; routine finished.')
+disp('log written to Obsolete_node_remover.log; routine finished.');
 fclose all;
 toc
 
