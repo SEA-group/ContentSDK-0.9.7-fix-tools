@@ -12,7 +12,7 @@ Note that this is a temporary solution proposed by MatroseFuchs from WG. [Main t
 Scripts by AstreTunes @ SEA group
 
 ## How to use
-1. Put `LOD_transporter.m`, `Obsolete_node_remover.m` and `content_0.11.1.0.mat` in `[WoWS folder]/bin/[largest number]/res_mods/PnFMods/`
+1. Put `LOD_transporter.m`, `Obsolete_node_remover.m` and `content_0.11.2.0.mat` in `[WoWS folder]/bin/[largest number]/res_mods/PnFMods/`
 2. Run `LOD_transporter.m`
 3. Run `Obsolete_node_remover.m`
 4. Original *.visual* and *.model* files are backed up and renamed to **.visualbak* and **.modelbak*, if your mods work fine after the fix, you can consider remove those backup files.
@@ -21,7 +21,7 @@ Scripts by AstreTunes @ SEA group
 1. **Matlab version must be r2016b or later**
 2. **The backup will be overwritten if you run the script twice**
 
-**[Download](https://github.com/SEA-group/ContentSDK-0.9.7-fix-tools/releases/download/0.11.1.0/ContentSDK_fix_0.11.1.0.zip)**
+**[Download](https://github.com/SEA-group/ContentSDK-0.9.7-fix-tools/releases/download/0.11.2.0/ContentSDK_fix_0.11.2.0.zip)**
 
 ## To generate content.mat after new game patch
 1. Download the latest [wowsunpack.exe](https://forum.worldofwarships.eu/topic/113847-all-wows-unpack-tool-unpack-game-client-resources/) and put it in WoWS installation folder;

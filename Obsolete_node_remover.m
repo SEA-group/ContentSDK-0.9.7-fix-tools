@@ -4,7 +4,7 @@
 % !!!!!! Matlab version r2016b or later is required (mandatory) !!!!!!
 
 % How to use:
-% - put this script and content_0.11.1.0.mat in res_mods/PnFMods/
+% - put this script and content_0.11.2.0.mat in res_mods/PnFMods/
 % - run this script
 
 % clc
@@ -14,7 +14,7 @@ tic
 
 %% Parameter
 
-gameVersion = '0.11.1.0';
+gameVersion = '0.11.2.0';
 
 %% Load available nodes list
 
