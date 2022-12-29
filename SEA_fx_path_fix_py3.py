@@ -33,6 +33,7 @@ def main(fileDir):
                     .replace('shaders/std_effects/ship_material_skinned.fx','shaders/materials/pbs/ship_material_skinned.fx')\
                     .replace('shaders/std_effects/wire_material.fx','shaders/materials/pbs/wire_material.fx')\
                     .replace('shaders/std_effects/glass_material.fx','shaders/materials/pbs/glass_material.fx')\
+                    .replace('shaders/std_effects/glass_material_skinned.fx','shaders/materials/pbs/glass_material_skinned.fx')\
                     .replace('shaders/std_effects/ship_nodamage_material.fx','shaders/materials/pbs/ship_nodamage_material.fx')) 
             f.close()
 
