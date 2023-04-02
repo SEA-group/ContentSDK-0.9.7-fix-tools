@@ -31,6 +31,7 @@ def main(fileDir):
             for line in all_the_lines:
                 f.write(line.replace('shaders/std_effects/glass_material.fx','shaders/materials/pbs/glass_material.fx')\
                     .replace('shaders/std_effects/glass_material_skinned.fx','shaders/materials/pbs/glass_material_skinned.fx')\
+                    .replace('shaders/std_effects/propeller_material.fx','shaders/materials/pbs/propeller_material.fx')\
                     .replace('shaders/std_effects/ship_anim_emissive_material.fx','shaders/materials/pbs/ship_anim_emissive_material.fx')\
                     .replace('shaders/std_effects/ship_anim_emissive_material_skinned.fx','shaders/materials/pbs/ship_anim_emissive_material_skinned.fx')\
                     .replace('shaders/std_effects/ship_anim_material.fx','shaders/materials/pbs/ship_anim_material.fx')\
